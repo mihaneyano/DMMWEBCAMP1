@@ -3,3 +3,46 @@
   padding:0;
   box-sizing: border-box;
 }
+.main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.top {
+  padding-bottom: 50px;
+}
+
+.top-list-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.top-list:nth-child(odd){
+  background-color: silver;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-contents {
+  background-color: yellow;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.bottom-contents:nth-child(3n){
+  margin-right: 0;
+}
+
+.bottom-contents-0 {
+  margin-bottom: 0;
+}
+
+.bottom-contents:nth-child(4n+1) {
+  background-color: orange;
+}
