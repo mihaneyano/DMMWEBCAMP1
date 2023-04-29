@@ -11,26 +11,28 @@ header {
 
 main {
   width: 960px;
-  margin: 50px auto;
+  padding: 50px 0;
+  margin: 0 auto;
   display: flex;
   justify-content:center;
-  position: relative;
 }
 
 .contents {
   width: 300px;
   background-color: #EEEEEE;
   margin-right: 30px;
+  padding-top: 10px;
+  position: relative;
 }
 
 .contents:last-child {
   margin-right: 0;
 }
+
 .img1{
   width: 280px;
   height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 0px 10px 0 10px;
   background-image: url(img/flow01.png);
   background-position: bottom;
   background-size: cover;
@@ -39,28 +41,7 @@ main {
 .img2{
   width: 280px;
   height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-image: url(img/flow01.png);
-  background-position: bottom;
-  background-size: cover;
-}
-
-.img1{
-  width: 280px;
-  height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-image: url(img/flow01.png);
-  background-position: bottom;
-  background-size: cover;
-}
-
-.img2{
-  width: 280px;
-  height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 0px 10px 0 10px;
   background-image: url(img/flow02.png);
   background-position: bottom;
   background-size: cover;
@@ -69,8 +50,7 @@ main {
 .img3{
   width: 280px;
   height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 0px 10px 0 10px;
   background-image: url(img/flow03.png);
   background-position: bottom;
   background-size: cover;
@@ -79,6 +59,7 @@ main {
 .step {
   background-color: orange;
   position: absolute;
+  top: 0;
 }
 
 section {
@@ -91,4 +72,31 @@ h3 {
 footer {
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .contents {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .contents:last-child {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .img1,.img2,.img3 {
+    width: auto;
+    height: 150px;
+  }
+
 }
